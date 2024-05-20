@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal List</title>
+  <link rel="stylesheet" type="text/css" href="./css/list.style.css"/>
+</head>
+<body>
+<div style="text-align: center;"><h2>Animal List</h2></div>
+<table id="animalTable">
+  <thead>
+  <tr>
+    <th onclick="sortTable(0)">Name</th>
+    <th onclick="sortTable(1)">Category</th>
+    <th>Description</th>
+    <th>Life Expectancy</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody id="animalTableBody">
+
+  </tbody>
+</table>
+<br>
+<br>
+
+<form id="animalForm" action="#" method="PUT">
+  <input type="hidden" id="animalId" name="id">
+  <input type="text" id="name" name="name" placeholder="Name"/>
+  <input type="text" id="category" name="category" placeholder="Category"/>
+  <textarea id="description" name="description" placeholder="Description"></textarea>
+  <input type="text" id="lifeExpectancy" name="lifeExpectancy" placeholder="Life Expectancy"/>
+  <button type="submit">Submit</button>
+
+
+</form>
+
+<script src="list.js"></script>
+</body>
+</html>
